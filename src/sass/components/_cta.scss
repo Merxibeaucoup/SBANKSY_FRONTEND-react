@@ -1,0 +1,29 @@
+.cta {
+  margin-top: -160px;
+  background-color: $LightGrayishBlue;
+
+  &__text {
+    padding-top: 8rem;
+    width: 54rem;
+
+    &-heading {
+      font-size: 4rem;
+      font-weight: 400;
+      margin-bottom: 1.4rem;
+      color: $DarkBlue;
+    }
+
+    &-paragraph {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: $GrayishBlue;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    &__items {
+    }
+  }
+}

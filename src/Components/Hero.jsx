@@ -10,7 +10,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero__text">
         <h2 className="hero__text-heading">{state.heading}</h2>
         <p className="hero__text-paragraph">{state.paragraph}</p>
@@ -29,7 +29,7 @@ const Hero = () => {
           <img src={state.phone} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

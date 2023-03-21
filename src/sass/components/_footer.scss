@@ -3,5 +3,39 @@
   color: $VeryLightGray;
   display: flex;
   justify-content: space-between;
-  padding: 0 6rem;
+  padding: 4rem 6rem;
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+
+    &-left {
+      &-logo {
+        margin-bottom: 3rem;
+      }
+      &-icons {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+    }
+
+    &-middle {
+      li {
+        margin-bottom: 1rem;
+      }
+      a {
+        color: $GrayishBlue;
+      }
+    }
+    &-right {
+      li {
+        margin-bottom: 1rem;
+      }
+      a {
+        color: $GrayishBlue;
+      }
+    }
+  }
 }

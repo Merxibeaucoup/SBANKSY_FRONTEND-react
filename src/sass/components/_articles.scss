@@ -1,0 +1,14 @@
+.article {
+  background-color: $VeryLightGray;
+
+  &__heading {
+    padding: 6rem 0;
+
+    &-header {
+      font-size: 4rem;
+      font-weight: 400;
+      margin-bottom: 1.4rem;
+      color: $DarkBlue;
+    }
+  }
+}

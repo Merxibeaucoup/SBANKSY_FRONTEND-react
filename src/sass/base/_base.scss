@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +7,12 @@
 }
 
 html {
+  font-family: "Public Sans", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 p {
-  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -22,7 +22,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", sans-serif;
   text-transform: capitalize;
 }
 

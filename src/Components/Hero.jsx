@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Hero = () => {
   const [state] = useState({
-    heading: "next generation digital banking",
+    heading: "Next generation digital banking",
     paragraph:
       "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.",
     bottom: "assets/images/bg-intro-desktop.svg",
@@ -20,9 +20,9 @@ const Hero = () => {
         className="hero__img"
         style={{
           background: `url(${state.bottom})`,
-          backgroundSize: "450px 450px",
+          backgroundSize: "800px 700px",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "right  top ",
+          backgroundPosition: "left 10px  top -160px ",
         }}
       >
         <div>

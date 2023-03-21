@@ -2,6 +2,43 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding-left: 6rem;
+  background-color: $VeryLightGray;
+
+  z-index: 8;
+  overflow: hidden;
+  &__text {
+    padding-right: 3rem;
+    &-heading {
+      font-size: 6rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: $DarkBlue;
+    }
+
+    &-paragraph {
+      font-size: 2rem;
+      font-weight: 300;
+      color: $GrayishBlue;
+      margin-bottom: 1.4rem;
+    }
+
+    &-button {
+      color: $VeryLightGray;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: 0.8rem 2rem;
+      background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+      border-radius: 999rem;
+    }
+  }
+
   &__img {
+    width: 120rem;
+    img {
+      width: 680px;
+      height: 700px;
+      margin-top: -55px;
+    }
   }
 }

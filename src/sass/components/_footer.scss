@@ -26,7 +26,7 @@
         margin-bottom: 1rem;
       }
       a {
-        color: $GrayishBlue;
+        color: $LightGrayishBlue;
       }
     }
     &-right {
@@ -34,8 +34,29 @@
         margin-bottom: 1rem;
       }
       a {
-        color: $GrayishBlue;
+        color: $LightGrayishBlue;
       }
+    }
+  }
+
+  &__right {
+    &__buttons {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: flex-end;
+      &-register {
+        color: $VeryLightGray;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 0.8rem 2rem;
+        background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+        border-radius: 999rem;
+      }
+    }
+
+    &-copyright {
+      font-size: 1.5rem;
+      color: $GrayishBlue;
     }
   }
 }

@@ -80,7 +80,16 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer__right">right</div>
+      <div className="footer__right">
+        <div className="footer__right__buttons">
+          <Link className="footer__right__buttons-register" to="/register">
+            Request invite
+          </Link>
+        </div>
+        <p className="footer__right-copyright">
+          ©Easybank. All Rights Reserved
+        </p>
+      </div>
     </footer>
   );
 };

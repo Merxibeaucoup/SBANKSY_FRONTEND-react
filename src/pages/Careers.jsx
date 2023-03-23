@@ -1,7 +1,7 @@
 import React from "react";
 
 const Careers = () => {
-  return <div>Careers</div>;
+  return <div className="careers">Careers</div>;
 };
 
 export default Careers;

@@ -1,0 +1,54 @@
+.login {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("/public/assets/images/login.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    width: 360px;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      color: $White;
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: $White;
+      font-size: 18px;
+    }
+
+    input,
+    textarea {
+      padding: 20px;
+      border: 1px solid rgb(216, 214, 214);
+    }
+
+    button {
+      border: none;
+      padding: 20px;
+      color: white;
+      font-weight: 500;
+      font-size: 1.8rem;
+      background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+      border-radius: 999rem;
+      cursor: pointer;
+
+      transition: all 0.4s linear;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}

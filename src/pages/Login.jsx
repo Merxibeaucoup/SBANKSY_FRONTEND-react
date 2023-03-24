@@ -24,7 +24,7 @@ const Login = () => {
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE" });
     }
-    navigate("/contacts");
+    navigate("/account");
   };
 
   return (

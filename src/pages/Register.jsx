@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth/AuthContext";
 import newRequest from "../utils/newRequest";
 
@@ -38,7 +38,16 @@ const Register = () => {
     <div className="register">
       <form onSubmit={handleSubmit}>
         <div className="left">
-          <h1>Create a new account</h1>
+          <div className="heading">
+            <h1>Create a new account</h1>
+            <p>
+              Already have an account ?
+              <span>
+                <Link to="/login">Log in</Link>
+              </span>
+            </p>
+          </div>
+
           <label htmlFor="">Firstname</label>
           <input
             name="firstname"

@@ -47,8 +47,8 @@ const Footer = () => {
           </div>
           <div className="footer__left-left-icons">
             {footerIcons.map((icon) => (
-              <li>
-                <img key={icon.id} src={icon.icon} alt="" />
+              <li key={icon.id}>
+                <img src={icon.icon} alt="" />
               </li>
             ))}
           </div>

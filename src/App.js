@@ -8,6 +8,8 @@ import Services from "./pages/Services";
 import Careers from "./pages/Careers";
 import Footer from "./Components/Footer";
 import Register from "./pages/Register";
+import Account from "./pages/Account";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="careers" element={<Careers />} />
         <Route path="home" element={<Home />} />
         <Route path="register" element={<Register />} />
+        <Route path="login" element={<Login />} />
+        <Route path="account" element={<Account />} />
       </Routes>
       <Footer />
     </BrowserRouter>

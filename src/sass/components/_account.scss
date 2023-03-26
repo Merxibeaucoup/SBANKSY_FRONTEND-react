@@ -1,0 +1,83 @@
+.account {
+  display: grid;
+  grid-template-columns: 180px 1fr 300px;
+  gap: 2rem;
+
+  &__container {
+    padding: 6rem;
+    background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+  }
+
+  &__wrapper {
+    padding: 2rem;
+
+    background-color: #ffc8dd7c;
+    border-radius: 2rem;
+  }
+
+  &__left {
+    background-color: $White;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__content {
+      padding-top: 5rem;
+      img {
+        margin-bottom: 10rem;
+      }
+      ul {
+        text-align: center;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 4rem;
+          font-size: 1.6rem;
+          cursor: pointer;
+          color: $GrayishBlue;
+
+          span {
+            margin-right: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__middle {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4rem;
+    }
+
+    &__top {
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        padding: 3rem 4rem;
+        background-color: $White;
+        border-radius: 2rem;
+        text-align: center;
+
+        li {
+          color: $GrayishBlue;
+          cursor: pointer;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    background-color: $White;
+    border-radius: 2rem;
+  }
+}

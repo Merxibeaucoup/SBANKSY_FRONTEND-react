@@ -7,6 +7,7 @@ import {
   BiMessageSquareAdd,
   BiArea,
   BiMoney,
+  BiBell,
 } from "react-icons/bi";
 import {
   BsCreditCard2Front,
@@ -16,12 +17,15 @@ import {
   BsArrowUp,
 } from "react-icons/bs";
 import { MdOutlineSettingsApplications } from "react-icons/md";
+import { FcCollaboration } from "react-icons/fc";
+import { CgArrowBottomRightO } from "react-icons/cg";
 
 const Account = () => {
   const [userAccountNumbers, setUserAccountNumbers] = useState([]);
   const { user } = useContext(AuthContext);
   const [state] = useState({
     logo: "assets/images/logo.svg",
+    avatar: "assets/images/user1.jpeg",
   });
 
   useEffect(() => {
@@ -135,14 +139,27 @@ const Account = () => {
                 </p>
               </div>
               <div className="account__middle__middle-right">
-                right --+ put an add in here
+                <p>Check all premium benefits for free right now !</p>
+                <div className="account__middle__middle-right-icons">
+                  <FcCollaboration className="fg" />
+                  <CgArrowBottomRightO className="cg" />
+                </div>
               </div>
             </div>
             <div className="account__middle__bottom">
               bottom --+ put transactions in here
             </div>
           </div>
-          <div className="account__right">right </div>
+          <div className="account__right">
+            <div className="account__right__top">
+              <div className="account__right__top-bell">
+                <BiBell />
+              </div>
+              <div className="account__right__top-img">
+                <img src={state.avatar} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

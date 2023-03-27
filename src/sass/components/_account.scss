@@ -118,8 +118,29 @@
 
       &-right {
         grid-column: 2/-1;
-        background-color: $White;
+        background: linear-gradient(to top right, $GrayishBlue, $White);
         border-radius: 1.4rem;
+        padding: 2rem 4rem;
+
+        p {
+          width: 65%;
+          color: $DarkBlue;
+          margin-bottom: 1rem;
+        }
+
+        &-icons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .fg {
+            font-size: 8rem;
+          }
+
+          .cg {
+            font-size: 4rem;
+          }
+        }
       }
     }
   }
@@ -127,5 +148,28 @@
   &__right {
     background-color: $White;
     border-radius: 2rem;
+
+    &__top {
+      display: flex;
+      padding: 5rem 2rem;
+      justify-content: space-between;
+      align-items: center;
+
+      &-bell {
+        font-size: 1.6rem;
+        color: $GrayishBlue;
+        padding: 0.4rem 0.6rem;
+        border: 0.5px solid $GrayishBlue;
+        border-radius: 50%;
+      }
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        border: 2px solid $GrayishBlue;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
   }
 }

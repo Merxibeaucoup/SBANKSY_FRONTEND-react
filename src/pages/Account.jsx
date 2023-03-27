@@ -13,6 +13,7 @@ import {
   BsCalendarEvent,
   BsChatLeftDots,
   BsSendCheck,
+  BsArrowUp,
 } from "react-icons/bs";
 import { MdOutlineSettingsApplications } from "react-icons/md";
 
@@ -122,8 +123,26 @@ const Account = () => {
                 </li>
               </ul>
             </div>
+            <div className="account__middle__middle">
+              <div className="account__middle__middle-left">
+                <h2>Total Balance</h2>
+                <h1>$100,000</h1>
+                <p>
+                  <span>
+                    <BsArrowUp />
+                  </span>
+                  3.73%
+                </p>
+              </div>
+              <div className="account__middle__middle-right">
+                right --+ put an add in here
+              </div>
+            </div>
+            <div className="account__middle__bottom">
+              bottom --+ put transactions in here
+            </div>
           </div>
-          <div className="account__right">right</div>
+          <div className="account__right">right </div>
         </div>
       </div>
     </div>

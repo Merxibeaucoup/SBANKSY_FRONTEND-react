@@ -23,9 +23,9 @@
     flex-direction: column;
 
     &__content {
-      padding-top: 5rem;
+      padding-top: 7rem;
       img {
-        margin-bottom: 10rem;
+        margin-bottom: 12rem;
       }
       ul {
         text-align: center;
@@ -34,9 +34,14 @@
           align-items: center;
           justify-content: center;
           margin-bottom: 4rem;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           cursor: pointer;
           color: $GrayishBlue;
+
+          &:hover,
+          &:active {
+            color: $LimeGreen;
+          }
 
           span {
             margin-right: 0.8rem;
@@ -67,11 +72,54 @@
         li {
           color: $GrayishBlue;
           cursor: pointer;
+          font-size: 1.2rem;
+
+          &:hover,
+          &:active {
+            color: $LimeGreen;
+          }
 
           span {
             display: block;
           }
         }
+      }
+    }
+
+    &__middle {
+      margin-top: 6rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      &-left {
+        grid-column: 1/2;
+        background-color: $DarkBlue;
+        border-radius: 1.4rem;
+        padding: 2rem 1.8rem;
+        text-align: center;
+        color: $VeryLightGray;
+
+        h2 {
+          margin-bottom: 1.6rem;
+        }
+        h1 {
+          font-size: 3.5rem;
+          margin-bottom: 1.2rem;
+        }
+
+        p {
+          display: inline-flex;
+          background-color: #0de55c8e;
+          padding: 0.4rem;
+          border-radius: 0.4rem;
+        }
+      }
+
+      &-right {
+        grid-column: 2/-1;
+        background-color: $White;
+        border-radius: 1.4rem;
       }
     }
   }

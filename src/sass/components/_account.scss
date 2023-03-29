@@ -4,13 +4,12 @@
   gap: 2rem;
 
   &__container {
-    padding: 6rem;
+    padding: 8rem;
     background: linear-gradient(to right, $LimeGreen, $BrightCyan);
   }
 
   &__wrapper {
     padding: 2rem;
-
     background-color: #ffc8dd7c;
     border-radius: 2rem;
   }
@@ -139,9 +138,25 @@
 
           .cg {
             font-size: 4rem;
+            cursor: pointer;
+
+            &:hover {
+              color: $White;
+            }
           }
         }
       }
+    }
+
+    &__bottom {
+      margin-top: 4rem;
+      background-color: $White;
+      height: max-content;
+      height: 30rem;
+      border-radius: 1.4rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
     }
   }
 
@@ -161,6 +176,8 @@
         padding: 0.4rem 0.6rem;
         border: 0.5px solid $GrayishBlue;
         border-radius: 50%;
+        object-position: center;
+        cursor: pointer;
       }
 
       img {
@@ -169,6 +186,25 @@
         border: 2px solid $GrayishBlue;
         border-radius: 50%;
         object-fit: cover;
+      }
+
+      &-register {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        gap: 0.5rem;
+
+        .card {
+          font-size: 2.5rem;
+          color: $LimeGreen;
+          cursor: pointer;
+          transition: all 0.4s linear;
+
+          &:hover {
+            color: $DarkBlue;
+          }
+        }
       }
     }
   }

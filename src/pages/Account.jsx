@@ -16,7 +16,10 @@ import {
   BsSendCheck,
   BsArrowUp,
 } from "react-icons/bs";
-import { MdOutlineSettingsApplications } from "react-icons/md";
+import {
+  MdOutlineSettingsApplications,
+  MdOutlineAddCard,
+} from "react-icons/md";
 import { FcCollaboration } from "react-icons/fc";
 import { CgArrowBottomRightO } from "react-icons/cg";
 
@@ -148,6 +151,12 @@ const Account = () => {
             </div>
             <div className="account__middle__bottom">
               bottom --+ put transactions in here
+              <div className="account__middle__bottom-header">
+                <h3>Transactions</h3>
+              </div>
+              <div className="account__middle__bottom-body">
+                transactions list
+              </div>
             </div>
           </div>
           <div className="account__right">
@@ -159,6 +168,20 @@ const Account = () => {
                 <img src={state.avatar} alt="" />
               </div>
             </div>
+
+            <div className="account__right__top-register">
+              <h2> Unlimited number of accounts </h2>
+              <p>click on icon, fill form to add a new Account card</p>
+              <MdOutlineAddCard className="card" />
+            </div>
+
+            <div className="account__right__top-list">
+              {userAccountNumbers
+                ? userAccountNumbers.map((item) => {
+                    return <AccountList item={item} key={item.id} />;
+                  })
+                : null}
+            </div>
           </div>
         </div>
       </div>
@@ -167,9 +190,3 @@ const Account = () => {
 };
 
 export default Account;
-
-// {userAccountNumbers
-//   ? userAccountNumbers.map((item) => {
-//       return <AccountList item={item} key={item.id} />;
-//     })
-//   : null}

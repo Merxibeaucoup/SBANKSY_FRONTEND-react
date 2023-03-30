@@ -7,13 +7,13 @@ const AccountList = ({ item }) => {
         <li>
           <div className="money">
             <div className="money__number">
-              <h2>Nickname</h2>
-              <h5>{item.number}</h5>
+              <p>Nickname</p>
+              <h3>{item.number}</h3>
             </div>
             <div className="money__balance">
-              <h5>
-                balance: <span>${item.balance}</span>{" "}
-              </h5>
+              <p>
+                balance: <span>${item.balance.toLocaleString("en-US")}</span>{" "}
+              </p>
             </div>
           </div>
         </li>

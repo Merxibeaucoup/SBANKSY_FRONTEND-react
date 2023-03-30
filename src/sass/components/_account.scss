@@ -195,11 +195,22 @@
         padding: 1rem;
         gap: 0.5rem;
 
+        p {
+          font-size: 1.4rem;
+          color: $DarkBlue;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+          color: $DarkBlue;
+        }
+
         .card {
           font-size: 2.5rem;
           color: $LimeGreen;
           cursor: pointer;
           transition: all 0.4s linear;
+          margin-bottom: 4rem;
 
           &:hover {
             color: $DarkBlue;
@@ -208,7 +219,6 @@
       }
 
       &-list {
-        width: 95%;
         padding: 0 1rem;
 
         .money {
@@ -220,8 +230,14 @@
 
           &__number {
             color: $DarkBlue;
-            h2 {
+
+            p {
+              font-size: 1rem;
+            }
+
+            h3 {
               margin-bottom: 0.8px;
+              font-size: 1.4rem;
             }
           }
 
@@ -229,9 +245,13 @@
             justify-self: center;
             color: $GrayishBlue;
 
+            p {
+              font-size: 1rem;
+            }
+
             span {
               color: $LimeGreen;
-              font-size: 1.4rem;
+              font-size: 1.5rem;
             }
           }
         }

@@ -173,6 +173,7 @@ const Account = () => {
               <h2> Unlimited number of accounts </h2>
               <p>click on icon, fill form to add a new Account card</p>
               <MdOutlineAddCard className="card" />
+              <p>Accounts:</p>
             </div>
 
             <div className="account__right__top-list">

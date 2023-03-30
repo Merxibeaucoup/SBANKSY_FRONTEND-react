@@ -27,11 +27,11 @@
         margin-bottom: 12rem;
       }
       ul {
-        text-align: center;
+        text-align: left;
         li {
           display: flex;
-          align-items: center;
-          justify-content: center;
+          // align-items: center;
+          // justify-content: center;
           margin-bottom: 4rem;
           font-size: 1.4rem;
           cursor: pointer;
@@ -203,6 +203,36 @@
 
           &:hover {
             color: $DarkBlue;
+          }
+        }
+      }
+
+      &-list {
+        width: 95%;
+        padding: 0 1rem;
+
+        .money {
+          display: grid;
+          align-items: center;
+          border-bottom: 0.5px solid #e3e2e2;
+          padding: 0.5rem;
+          grid-template-columns: repeat(2, 1fr);
+
+          &__number {
+            color: $DarkBlue;
+            h2 {
+              margin-bottom: 0.8px;
+            }
+          }
+
+          &__balance {
+            justify-self: center;
+            color: $GrayishBlue;
+
+            span {
+              color: $LimeGreen;
+              font-size: 1.4rem;
+            }
           }
         }
       }
